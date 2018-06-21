@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>real estate</title>
+	<meta charset="utf-8">
+	<meta name="author" content="real estate website">
+	<script type="text/javascript"></script>
+	<style type="text/css">
+		*{
+			padding: 0px;
+			margin: 0px;
+		}
+		@font-face{
+			font-family: Indie Flower Regular;
+			src:url('Control Panel\Appearance and Personalization\Fonts\Indie Flower Regular');
+			font-family: Dancing Script Bold;
+			src:url('Control Panel\Appearance and Personalization\Fonts\Dancing Script Bold');
+			font-family: Lobster Regular;
+			src:url('Control Panel\Appearance and Personalization\Fonts\Lobster Regular');
+			font-family: Indie Flower Regular;
+			src:url('Control Panel\Appearance and Personalization\Fonts\IndieFlower Regular');
+			font-family:SpecialElite Regular;
+			src:url('Control Panel\Appearance and Personalization\Fonts\Pacifico Regular');
+			font-family: Pacifico Regular;
+			src:url('Control Panel\Appearance and Personalization\Fonts\SpecialElite Regular');
+			font-family:Dosis Medium;
+			src:url('Control Panel\Appearance and Personalization\Fonts\Dosis Medium');
+}
+		.heading{
+					position: static;
+					background:rgb(255, 15, 75);
+					height:80px;
+		}
+		.heading h1{
+						text-align: center;
+						font-size: 30px;
+						color: #fff;
+						text-transform: uppercase;
+						margin-left: 5px;
+								}
+		.heading ul li{
+					 list-style: none;
+					 float: right;
+					 color: #fff;
+					 padding: 10px;
+					 background:rgb(255, 15, 75);
+					 font-size: 20px;
+					 margin-top:0px;
+					 text-transform: uppercase;
+		}
+		ul li:hover{
+						text-transform: uppercase;
+						background: rgba(0, 0, 0, 0.5);
+						color: #fff;
+		}
+		/* navigate begins */
+		.navigate{
+					width: 100%;
+					height: 500px;
+					background: whitesmoke;
+					margin-top:  20px;
+					background-image: url('bg.jpg') no repeat;
+					position:center center ;
+					font-family: Indie Flower Regular;
+					font-size: 20px;
+		}
+		.navigate img{
+			 				width: 300px;
+			 				height: 250px;
+			 				opacity: .5;
+			 				margin:25px  40px;
+			 				transition: 0.6 ease-in;
+		}
+		.navigate section{
+								width: 500px;
+								margin:-225px 650px;
+		}
+		/* navigate ends */
+		/* content */
+		.content-greeting p{
+									font-family:Dosis Regular; 
+									font-size:30px;
+									margin: 10px 450px;
+		}
+		.content-greeting h1{
+								margin: 10px 550px;
+								font-family: Dosis Regular;
+		}
+		.content{
+					display: grid;
+					grid-template-columns: 1fr 1fr 1fr;
+					grid-gap: 20px;
+				
+					font-size: 20px;
+		}
+		.content >div{
+						width: 400px;
+						height: 800px;
+						background: #efefef;
+						font-family:Dosis Regular; 
+		}
+		.content img{
+						width:150px;
+						height:150px;
+						opacity: .2px;
+						margin: 20px 120px;
+		}
+		.content p{
+						margin: 20px 50px;
+						font-family: 
+		}
+
+		/* partners */
+		.partners-greeting p{ 
+								font-family:Dosis Regular; 
+									font-size:30px;
+									margin: 10px 450px;
+		}
+		.partners-greeting h1{
+								margin: 10px 550px;
+								font-family: Dosis Regular;
+		}
+		.partners{
+					margin-top:20px;
+					background: linear-gradient(to left,rgb(225, 177, 81),pink);
+					height:600px;
+					font-size: 30px;
+		}
+		.partners img{
+						padding: 20px;
+						width: 150px;
+						margin:80px 60px;
+		}
+		/* end of partners */
+		/* feedback */
+		.feedback-greeting p{
+									font-family:Dosis Regular; 
+									font-size:30px;
+									margin: 10px 450px;
+
+		}
+		.feedback-greeting h1{
+								margin: 10px 450px;
+								font-family: Dosis Regular;
+		}
+		.feedback{
+					background: linear-gradient(to left,rgb(187, 81, 225),rgb(81, 225, 107));
+					height:600px;
+					font-family: Lobster Regular;
+					font-size: 20px;
+					margin-top:  40px;
+		}
+		/* try to show only the bottomside of the input field 
+	#txt-input{
+					margin: 40px 450px;				
+					border:2px solid #ccc;
+					width: 450px;
+					height: 50px;
+					border-radius:8px;
+
+					/* tried technique for that 
+					border-right-width:hidden;
+					border-top-width:hidden;
+					border-left-width:hidden;
+					border-top-width: 0px;
+					border-right-width: 0px;
+					border-left-width: 0px; 
+		}
+		#pwd-input{
+					margin: 40px 450px;
+					border:2px solid #ccc;
+					width: 450px;
+					height: 50px;
+					border-radius:8px;
+		}
+		#labl-name{
+						font-family: aerial;
+						font-size:50px;
+						margin:335px  220px;
+		}
+		#labl-pwd{
+						font-family: aerial;
+						font-size:50px;
+						margin:335px  220px;
+
+		}*/
+		/* when you have  a icon like something space vehicles put that here that show users to sign in anf have fun */
+		
+		.feedback label{
+							margin:60px 250px;
+		}
+		.feedback input{
+							margin: 20px 450px;
+							width: 450px;
+							height: 50px;
+							border-radius:12px;
+		}
+		#btn{
+				margin: 40px 550px;
+				width: 250px;
+				height:50px;
+				background:#000;
+				opacity: 0.5;
+				color: #fff;
+				border-radius: 30px;
+		}
+		#btn:hover{
+						opacity:1;
+		}	
+		/* footing */
+		.footing-greeting h1{
+								margin: 10px 550px;
+								font-family: Dosis Regular;
+		}
+		.footing-greeting p{
+								font-family:Dosis Regular; 
+									font-size:30px;
+									margin: 10px 450px;
+		}
+		.footing{
+					background:crimson;		/* dark blue #2D2F31; */
+					color:#37A0CE;
+					font-size:20px;
+					font-family:Pacifico Regular;
+					height:800px;
+					list-style: none;
+		}
+		.footing li{
+						margin:0px 250px;
+		}
+		.footing li:nth-child(even){
+							margin:2px 550px;
+		}/* i've wasted 1 1/2 hours in just edting thid fucking this 
+		DONT DO Athis AGAIN 
+		.social-media{
+						list-style: none;
+						margin:10px 220px;
+						background: red;
+						height: 400px;
+						width: 300px;
+		}
+		.social-media li{
+							margin:20px 150px;
+
+		} 
+		.site-itself{
+						list-style: none;
+						margin:-350px 250px;
+						padding:15px;
+						background:blue;
+						height: 400px;
+						width: 400px;
+
+		}
+		.site-itself li{
+						margin:20px 550px;
+		} */
+		#location{
+					margin:-320px 200px 0px 925px;
+					width:200px;
+					height:200px;
+					border:1px solid black;
+		}
+		#copyright{
+					text-align: center;
+					margin:40px 550px;
+		}
+		/* footing ends */
+	</style>
+</head>
+<body>
+<!-- header -->
+<div class="heading">
+	<h1>Welcome to b'lore real estate</h1>
+		<ul>
+			<li>home</li>
+			<li>careers</li>
+			<li>partners</li>
+			<li>help</li>
+		</ul>
+</div>
+<!-- header ends -->
+<!-- navbar -->
+			<div class="navigate">
+				<!-- background transparent image -->
+				<img src="img2.jpg">
+					<section>
+
+												<h1>WHO ARE WE!</h1>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</section>
+			</div>
+<!-- navbar ends -->
+<!-- content begins -->
+									<div class="content-greeting">
+										<h1>OUR BUILDINGS!</h1>	
+											<p>The projects completed since our rise</p>
+									</div>
+							<div class="content">
+								<div>																				
+									<img src="scenary.jpg">
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+									tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+									quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+									consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+									cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+									proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+								</div>
+										<div>
+											<img src="download.jpg">
+											<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+											tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+											quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+											consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+											cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+											proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+										</div>
+												<div>
+													<img src="villa.jpg">
+													<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+													tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+													quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+													consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+													cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+													proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+												</div>
+										<div>
+											<img src="opera.jpg">
+											<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+											tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+											quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+											consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+											cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+											proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+										</div>
+								<div>
+									<img src="bridge.jpg">
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+									tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+									quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+									consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+									cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+									proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+								</div>
+								<div>
+									<img src="muslim.jpg">
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+									tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+									quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+									consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+									cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+									proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+								</div>
+							</div>
+<!-- content ends -->
+<div class="partners-greeting">
+	<h1>OUR PARTNERS</h1>
+	<p>SEE WHAT WE DID WITH WHOME</p>
+</div>
+<!-- partners -->
+							<div class="partners">
+								<img src="Avanade.png">
+								<img src="microsoft.png">
+								<img src="IBM.png">
+								<img src="hp.png">
+								<img src="Accenture.png">
+								<img src="cisco.png">
+								<img src="discovery.png">
+								<img src="nat geo.jpg">
+							</div>
+<!-- partners ends -->
+<!-- feedback -->
+<div class="feedback-greeting">
+	<h1>GIVE SOME ADVICE TO US!</h1>
+</div>
+					<div class="feedback">
+						<label id="labl-name">user name</label>
+						<input type="text" id="txt-input">
+						<label id="labl-pwd">password</label>
+						<input type="password" id="pwd-input">	
+						<input type="button" value="submit" id="btn">
+					</div>
+<!-- feedback ends -->
+<!-- footer -->
+<div class="footing-greeting">
+	<h1>contact us!</h1>
+</div>
+<div class="footing">
+				<li><a href="">Home</a></li>
+				<li><a href="">products</a></li>
+				<li><a href="">offices</a></li>
+				<li><a href="">categories</a></li>
+				<li><a href="">for education</a></li>
+				<li><a href="">Awards</a></li>
+				<li><a href="">achievments</a></li>
+				<li><a href="">about</a></li>
+				<li><a href="#">facebook</a></li>
+				<li><a href="#">twitter</a></li>
+				<li><a href="#">youtube</a></li>
+				<li><a href="#">github</a></li>
+				<li><a href="#">medium</a></li>
+				<img src="" id="location">	
+				<p id="copyright">copyright @ 2018</p>
+</div>
+	
+			
+</div>
+<!-- footer ends -->
+</body>
+</html>
